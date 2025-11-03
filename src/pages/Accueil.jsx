@@ -1,0 +1,2 @@
+import React from 'react'
+export default function Accueil(){return (<div className='max-w-6xl mx-auto'><div className='big-table bg-card p-6 rounded-lg border border-gray-700 shadow-lg'><h2 className='text-xl font-semibold mb-4'>Pigeon Raiders</h2><p className='text-gray-300 mb-4'>Utilise les onglets en haut à droite pour naviguer vers les pages "Demandes" et "Objets en double".</p></div></div>)}

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{ --neon:#00d1ff; --card-bg: rgba(10,12,18,0.6); }
+body{ font-family:'Orbitron',sans-serif; background: linear-gradient(180deg,#03040a 0%, #050816 100%); color:#e6f6ff; }
+.animated-bg::before{ content:''; position:absolute; inset:0; background-image: radial-gradient(circle at 20% 20%, rgba(0,210,255,0.06), transparent 10%), radial-gradient(circle at 80% 80%, rgba(0,120,255,0.04), transparent 8%); mix-blend-mode: screen; z-index:-1; animation: drift 18s linear infinite; }
+@keyframes drift{ 0%{ transform: translateY(0) } 50%{ transform: translateY(-20px) } 100%{ transform: translateY(0) } }
+.nav-btn{ padding:8px 14px; border:1px solid rgba(0,209,255,0.12); background: linear-gradient(180deg, rgba(0,209,255,0.06), rgba(0,0,0,0.06)); color:var(--neon); border-radius:8px; font-weight:600; text-decoration:none; box-shadow: 0 0 8px rgba(0,210,255,0.04); }
+.nav-btn:hover{ box-shadow: 0 0 18px rgba(0,210,255,0.25); transform: translateY(-2px); transition: all 150ms ease; }
+.nav-btn.active{ background: rgba(0,210,255,0.08); box-shadow: 0 0 20px rgba(0,210,255,0.3); }
+.bg-card{ background: var(--card-bg); }
+.form-box{ position: sticky; top:100px; }
+.big-table{ min-height: 340px; }
+button.bg-neon{ background:linear-gradient(90deg,#00d1ff,#00a6ff); color:black; border-radius:8px; padding:8px 12px; }
+.conn-btn{ padding:8px 12px; background: linear-gradient(90deg,#00d1ff,#00a6ff); color:#00101a; border-radius:8px; font-weight:700; display:inline-flex; align-items:center; gap:8px; }
+input, textarea{ color:#e6f6ff }
